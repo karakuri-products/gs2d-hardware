@@ -52,7 +52,7 @@ gs2d でサポートするシリアルサーボのバスの物理層は RS485、
 
 #### TxDEN について
 
-FT232 などの USB シリアルドライバを利用する際は提供される TxDEN をそのまま活用できます。例えば、FT232 では出荷設定では CBUS2 端子に TxDEN 出力が割り当てられており、これを接続します。
+FT232 などの USB シリアルドライバを利用する際は提供される TxDEN をそのまま活用できます。例えば、FT232 では出荷設定では CBUS2 端子に TxDEN 出力が割り当てられており、これを接続します（図4）。
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/15685007/91417518-e4815200-e88b-11ea-9c82-37f3e984be1c.png" alt="gs2d-hw fig.4" width="50%">
@@ -60,7 +60,7 @@ FT232 などの USB シリアルドライバを利用する際は提供される
 
 > 図 4 FT232 での接続例
 
-Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxDEN に適当な GPIO を接続します。この GPIO をシリアル送信/受診時に適切に制御することで、コマンドのループバックを遮断します。
+Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxDEN に適当な GPIO を接続します。この GPIO をシリアル送信/受診時に適切に制御することで、コマンドのループバックを遮断します。Arduino UNO での例を図5に示します。
 
 接続した GPIO の制御は gs2d-cpp ライブラリの How to Use を確認ください。
 
@@ -68,7 +68,7 @@ Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxD
     <img src="https://user-images.githubusercontent.com/15685007/91422713-7e4bfd80-e892-11ea-8231-b1f5f4a2625a.png" alt="gs2d-hw fig.5" width="85%">
 </div>
 
-> 図 5 Arduino UNO での接続例
+> 図 5 Arduino UNO での接続例<br>
 > (この例では、ディジタルピン 2 を TxDEN として活用、シリアルはハードウェア・シリアル)
 
 ## ライセンス
