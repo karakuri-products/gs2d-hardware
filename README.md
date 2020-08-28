@@ -1,4 +1,4 @@
-# gs2d-hw (gs2d Hardware Manual)
+# gs2d-hardware (gs2d Hardware Manual)
 
 > gs2d ライブラリ・ハードウェアマニュアル
 
