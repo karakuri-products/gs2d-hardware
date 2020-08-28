@@ -3,7 +3,7 @@
 > gs2d 対応 シリアルサーボ・ドライバ kr-gs2d001
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/91548695-ba4d9400-e960-11ea-8d6d-0a661d43565c.png" alt="gs2d-hw fig.1" width="80%">
+    <img src="https://user-images.githubusercontent.com/15685007/91549700-49a77700-e962-11ea-84e7-53ee81f47ddc.png" alt="gs2d-hw fig.1" width="80%">
 </div>
 
 ---
