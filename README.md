@@ -97,7 +97,8 @@ Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxD
     <img src="https://user-images.githubusercontent.com/15685007/92323344-f5dc1280-f072-11ea-9046-e17307873895.png" alt="gs2d-hw fig.8" width="80%">
 </div>
 
-> 図 8 レベル変換を組込んだシリアルバスドライバ回路の一例
+> 図 7 レベル変換を組込んだシリアルバスドライバ回路の一例<br>
+> (入力信号側のI/Oレベル を +3.3V の場合)
 
 より詳細な設計例は gs2d に対応済みのシリアルサーボドライバ kr-gs2d001 (karakuri products 製) の<a href="./kr-gs2d001/kr-gs2d001_schematic.pdf">回路図</a>を参照ください。
 
