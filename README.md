@@ -85,7 +85,7 @@ Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxD
 双方向レベル変換回路の具体的な設計例を図 6 に示します。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/92321541-d4c0f500-f065-11ea-8a64-750302dad30a.png" alt="gs2d-hw fig.6" width="50%">
+    <img src="https://user-images.githubusercontent.com/15685007/92325782-24b0b380-f088-11ea-8873-63c3e8286211.png" alt="gs2d-hw fig.6" width="50%">
 </div>
 
 > 図 6 Nch MOS-FET を用いた双方向レベル変換回路の一例<br>
@@ -94,7 +94,7 @@ Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxD
 図 6 を組込んだシリアルバス・ドライバの設計例を図 7 に示します。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/92323344-f5dc1280-f072-11ea-9046-e17307873895.png" alt="gs2d-hw fig.8" width="80%">
+    <img src="https://user-images.githubusercontent.com/15685007/92325756-0480f480-f088-11ea-837d-831aae6f715b.png" alt="gs2d-hw fig.8" width="80%">
 </div>
 
 > 図 7 レベル変換を組込んだシリアルバスドライバ回路の一例<br>
