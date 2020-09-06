@@ -80,25 +80,25 @@ Arduino、Teensy 等のマイコンからシリアルを入力する場合、TxD
 
 シリアルサーボ側の信号ラインは一般的に +5V レベルが採用されており、 gs2d もこれに準じます。
 
-上記の例（図 4 ～ 5）では、入力する RX、TX、TXDEN の I/O レベルが +5V であると仮定し、直接、シリアルバス・ドライバに接続していました。しかしそうでない場合（5V 以下の場合）は双方向レベル変換回路を接続し、I/Oレベルの差異を吸収してください。
+上記の例（図 4 ～ 5）では、入力する RX、TX、TXDEN の I/O レベルが +5V であると仮定し、直接、シリアルバス・ドライバに接続していました。しかしそうでない場合（5V 未満の場合）は双方向レベル変換回路を接続し、I/O レベルの差異を吸収してください。
 
-双方向レベル変換回路の具体的な設計例を図 6 に示します。
+双方向レベル変換回路の具体的な設計例を図 6 に示します。この設計例は V<sub>IOREF</sub> = +5V の場合も対応します。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/92325782-24b0b380-f088-11ea-8873-63c3e8286211.png" alt="gs2d-hw fig.6" width="50%">
+    <img src="https://user-images.githubusercontent.com/15685007/92326035-28453a00-f08a-11ea-8c71-1b4bdedcff6f.png" alt="gs2d-hw fig.6" width="50%">
 </div>
 
 > 図 6 Nch MOS-FET を用いた双方向レベル変換回路の一例<br>
-> R は 10kΩ 程度の抵抗、Q は Nch MOS-FET。V<sub>IOREF</sub> には低電圧システム側の基準電圧を接続します。
+> R は 10kΩ 程度の抵抗、Q は Nch MOS-FET。V<sub>IOREF</sub> には低電圧 Lv. I/O 側の基準電圧を接続します。
 
 図 6 を組込んだシリアルバス・ドライバの設計例を図 7 に示します。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/92325756-0480f480-f088-11ea-837d-831aae6f715b.png" alt="gs2d-hw fig.8" width="80%">
+    <img src="https://user-images.githubusercontent.com/15685007/92325756-0480f480-f088-11ea-837d-831aae6f715b.png" alt="gs2d-hw fig.７" width="80%">
 </div>
 
 > 図 7 レベル変換を組込んだシリアルバスドライバ回路の一例<br>
-> (入力信号側のI/Oレベルが +3.3V の場合)
+> (入力信号側の I/O レベルが +3.3V の場合)
 
 より詳細な設計例は gs2d に対応済みのシリアルサーボドライバ kr-gs2d001 (karakuri products 製) の<a href="./kr-gs2d001/kr-gs2d001_schematic.pdf">回路図</a>を参照ください。
 
