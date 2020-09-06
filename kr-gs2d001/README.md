@@ -42,9 +42,7 @@ kr-gs2d001 でサポートするメーカ/規格は表 2 のとおりです。�
 
 #### 3D モデルデータ
 
-<a href="./3dmodel"> ./3dmodel </a>にて提供します。
-
-提供形式は表 3 のとおり。いずれも Autodesk Inventor 2020 にて正常な読込を確認済みです。
+<a href="./3dmodel"> ./3dmodel </a>にて提供します。形式は表 3 のとおり。
 
 > 表 3 提供モデルデータ形式一覧
 
@@ -60,46 +58,53 @@ kr-gs2d001 でサポートするメーカ/規格は表 2 のとおりです。�
 
 > 表 4 コネクタ一覧
 
-| 番号        | 種類                  | 用途                          |
-| ----------- | --------------------- | ----------------------------- |
-| CN1 ~ CN4   | JST-XH 4p             | KONDO B3M (RS485)             |
-| CN5 ~ CN6   | JST-EH 4p             | ROBOTIS Dynamixel X (RS485)   |
-| CN9 ~ CN12  | JST-EH 4p             | FUTABA RS40x (RS485)          |
-| CN13 ~ CN16 | JST-ZH 3p             | KONDO KRS33xx (1 wire TTL)    |
-| CN17 ~ CN20 | QI(2550) 3p           | 1 wire TTL Serial 共用        |
-| CN21 ~ CN24 | JST-ADH 3p            | FUTABA RS20x (1 wire TTL)     |
-| CN25 ~ CN28 | QI(2550) 6p,8p x2,10p | Arduino シールド              |
-| CN29        | CX90M-16P             | USB typeC (USB2.1, PD 非対応) |
-| CN30        | AMASS-XT60 2p         | 電源コネクタ                  |
+| 番号        | 種類                  | 用途                        |
+| ----------- | --------------------- | --------------------------- |
+| CN1 ~ CN4   | JST-XH 4p             | KONDO B3M (RS485)           |
+| CN5 ~ CN6   | JST-EH 4p             | ROBOTIS Dynamixel X (RS485) |
+| CN9 ~ CN12  | JST-EH 4p             | FUTABA RS40x (RS485)        |
+| CN13 ~ CN16 | JST-ZH 3p             | KONDO KRS33xx (1 wire TTL)  |
+| CN17 ~ CN20 | QI(2550) 3p           | 1 wire TTL Serial 共用      |
+| CN21 ~ CN24 | JST-ADH 3p            | FUTABA RS20x (1 wire TTL)   |
+| CN25 ~ CN28 | QI(2550) 6p,8p x2,10p | Arduino シールド            |
+| CN29        | USB typeC             | USB2.1, PD 非対応           |
+| CN30        | AMASS-XT60 2p         | 電源コネクタ                |
 
 #### 部品配置
 
 > 表 5 主要部品一覧
 
-| 番号    | 用途                                                  |
-| ------- | ----------------------------------------------------- |
-| SW1     | RS485 / 1 wire TTL Serial 切替え (図 2)               |
-| SW2     | Arduino (もしくは外部シリアル入力) / USB-typeC 切替え |
-| LED1    | USB シリアル TxLED                                    |
-| LED2    | USB シリアル RxLED                                    |
-| LED3    | 電源 LED                                              |
-| SJ1/SJ2 | Arduino ハードウェア/ソフトウェア シリアル切替え      |
+| 番号    | 用途                                                                                              |
+| ------- | ------------------------------------------------------------------------------------------------- |
+| SW1     | RS485 / 1 wire TTL Serial 切替え (図 2)                                                           |
+| SW2     | USB シリアル入力 (USB typeC 経由) / Arduino シリアル入力 (もしくは外部シリアル入力) 切替え (図 3) |
+| LED1    | USB シリアル TxLED                                                                                |
+| LED2    | USB シリアル RxLED                                                                                |
+| LED3    | 電源 LED                                                                                          |
+| SJ1/SJ2 | Arduino ハードウェア/ソフトウェア シリアル切替え (図 4)                                            |
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/91662556-39d49200-eb1e-11ea-9d3a-fc006139c41f.png" alt="sw1 fig.2" width="45%">
+    <img src="https://user-images.githubusercontent.com/15685007/92323576-d8a84380-f074-11ea-918e-21c6807d2d1a.png" alt="sw1 fig.2" width="50%">
 </div>
 
-> 図 2 SW1 によるシリアル信号の通信規格の切替え
+> 図 2 SW1 によるシリアル信号の通信規格の切替え<br>
 > (a) RS485, (b) 1 wire TTL Serial
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/15685007/92323998-5752b000-f078-11ea-8ce8-552ecd24aad4.png" alt="sw1 fig.3" width="50%">
+</div>
+
+> 図 3 SW2 による入力シリアル信号の切替え<br>
+> (a) USB シリアル入力 (USB typeC 経由), (b) Arduino シリアル入力 (もしくは外部シリアル入力)
 
 ### 電気的仕様
 
 > 表 6 電気的仕様一覧
 
-| パラメータ     | 値           |
-| -------------- | ------------ |
-| 電源電圧       | 5.0 ～ 24.0V |
-| 対応 IO レベル | 3.0 ～ 5.0V  |
+| パラメータ         | 値           |
+| ------------------ | ------------ |
+| 電源電圧           | 5.0 ～ 24.0V |
+| 対応入力 IO レベル | 3.0 ～ 5.0V  |
 
 #### 回路図
 
