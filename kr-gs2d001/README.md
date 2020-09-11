@@ -21,7 +21,7 @@ kr-gs2d001 は、gs2d ライブラリに対応したシリアルサーボ・ド�
 > 図 1 kr-gs2d001 外観 (左: 正面、右: 背面)
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/92860439-3650dd00-f433-11ea-86e0-7f10f30b5e35.png" alt="gs2d-hw fig.1" width="100%">
+    <img src="https://user-images.githubusercontent.com/15685007/92877811-7bcad580-f446-11ea-9d84-3e5e029baa1a.png" alt="gs2d-hw fig.1" width="100%">
 </div>
 
 > 図 2 kr-gs2d001 ブロック図
