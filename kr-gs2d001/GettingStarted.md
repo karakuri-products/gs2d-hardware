@@ -26,10 +26,10 @@
 
 kr-gs2d001 を Arduino シールドとして使う場合、以下の (1[↓](#A-1)), (2[↓](#A-2)) を設定し、Arduino に接続します [↓](#A-3)。
 
-設定項目をブロック図上に示します(図１)。
+設定の概要をブロック図上に示します(図１)。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/92864593-40c1a580-f438-11ea-8548-93780ff27515.png" alt="GettingStarted fig.a-1" width="90%">
+    <img src="https://user-images.githubusercontent.com/15685007/92877947-9bfa9480-f446-11ea-9ed0-ff1420beb59f.png" alt="GettingStarted fig.a-1" width="90%">
 </div>
 
 > 図 1, Arduino シールドとして利用する場合の設定
