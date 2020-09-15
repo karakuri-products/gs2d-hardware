@@ -12,13 +12,14 @@
 - B: マイコンに接続して使う [↓](#gs2d-mcu)
 - C: PC に接続して使う [↓](#gs2d-pc)
 
-<!-- 
+<!--
 ### シリアルサーボを動かしてみる
 
 - C++ で動かしてみる
 - Python で動かしてみる
 - C# で動かしてみる
 -->
+
 ---
 
 <a id="gs2d-arduino"></a>
@@ -28,7 +29,7 @@
 kr-gs2d001 を Arduino シールドとして使う場合、以下の (A-1[↓](#A-1)), (A-2[↓](#A-2)) を設定し、Arduino に接続します [↓](#A-3)。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/93052091-7b2d7b80-f6a0-11ea-9c1b-2f12ed3a96af.png" alt="GettingStarted fig.a1" width="100%">
+    <img src="https://user-images.githubusercontent.com/15685007/93182519-bdc08800-f774-11ea-8c1d-35ea4fe155f3.png" alt="GettingStarted fig.a1" width="100%">
 </div>
 
 > 図 A1, Arduino シールドとして利用する場合の設定
@@ -95,7 +96,11 @@ CN25 ~ CN28 に 2.54mm ピンヘッダ（plug）をハンダ付けし、Arduino 
 
 > 図 A7, kr-gs2d001 と Arduino との接続 (図は Arduino UNO R3 との接続例)
 
+<!--
+
 #### 電源の供給
+
+-->
 
 ---
 
@@ -106,7 +111,7 @@ CN25 ~ CN28 に 2.54mm ピンヘッダ（plug）をハンダ付けし、Arduino 
 以下の (B-1[↓](#B-1)), (B-2[↓](#B-2)) を設定し、マイコンを接続します [↓](#B-3)。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/93052191-9ef0c180-f6a0-11ea-8ee9-599a20382aa1.png" alt="GettingStarted fig.B1" width="100%">
+    <img src="https://user-images.githubusercontent.com/15685007/93193534-f155df00-f781-11ea-9e19-105264ba0a98.png" alt="GettingStarted fig.B1" width="100%">
 </div>
 
 > 図 B1, マイコンに接続して使う場合の設定
@@ -168,7 +173,7 @@ CN25 ~ CN28 に 2.54mm ピンヘッダ（plug）をハンダ付けし、Arduino 
 以下の (C-1[↓](#C-1)) を設定し、PC を接続します [↓](#C-3)。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/93052646-8208be00-f6a1-11ea-8fc2-460c527c0e0e.png" alt="GettingStarted fig.2" width="100%">
+    <img src="https://user-images.githubusercontent.com/15685007/93193614-0894cc80-f782-11ea-832f-d4adcfe58803.png" alt="GettingStarted fig.2" width="100%">
 </div>
 
 > 図 C1, PC と接続して使う場合の設定
@@ -192,8 +197,13 @@ CN25 ~ CN28 に 2.54mm ピンヘッダ（plug）をハンダ付けし、Arduino 
 </div>
 
 > 図 C3, SW1 の設定
+
 ---
 
 ## ライセンス
 
 kr-gs2d001 は Apache License 2.0 とします。詳細は LICENSE 参照。
+
+[<img src="https://user-images.githubusercontent.com/15685007/91433150-c886ac00-e89d-11ea-9695-45ce390ce97e.png" alt="gs2d concept" width="10%">](https://github.com/karakuri-products/gs2d)
+
+---
